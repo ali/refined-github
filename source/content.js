@@ -70,6 +70,7 @@ import closeOutOfViewModals from './features/close-out-of-view-modals';
 import addScopedSearchOnUserProfile from './features/add-scoped-search-on-user-profile';
 import monospaceTextareas from './features/monospace-textareas';
 import improveShortcutHelp from './features/improve-shortcut-help';
+import removeContributedReposDashboardSidebarBox from './features/remove-contributed-repos-dashboard-sidebar-box';
 
 import * as pageDetect from './libs/page-detect';
 import {safeElementReady, enableFeature} from './libs/utils';
@@ -154,6 +155,7 @@ function onDomReady() {
 	if (pageDetect.isDashboard()) {
 		enableFeature(hideOwnStars);
 		enableFeature(autoLoadMoreNews);
+		enableFeature(removeContributedReposDashboardSidebarBox);
 	}
 
 	onAjaxedPages(ajaxedPagesHandler);

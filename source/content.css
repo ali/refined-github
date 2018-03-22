@@ -24,11 +24,6 @@
 	display: none !important;
 }
 
-/* Remove "Repositories you contribute to" dashboard sidebar box */
-.dashboard-sidebar > .boxed-group[role='navigation']:not(.repos) {
-	display: none !important;
-}
-
 /* Match context switcher's width to the width of the containers below it */
 .dashboard-sidebar .select-menu {
 	width: 100%;
